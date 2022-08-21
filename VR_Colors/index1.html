@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mein {
+            position: relative;
+            width: 1440px;
+            height: 900px;
+            background: #FFFFFF;
+            box-shadow: 0px 20px 100px rgba(8, 24, 81, 0.25);
+            border-radius: 10px;
+            border: 1px solid red;
+        }
+      
+        .logo {
+            position: absolute;
+            width: 201px;
+            height: 40px;
+            left: 76px;
+            top: 90px;
+            border: 1px solid red;
+        }
+
+        .button_cart {
+            position: absolute;
+            width: 115px;
+            height: 38px;
+            left: 1251px;
+            top: 89px;
+            border: 1px solid red;
+        }
+
+        .nav {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 160%;
+            position: absolute;
+            height: 32px;
+            top: 788px;
+        }
+
+        .nav_capacity {
+            width: 139px;
+            left: 126px;
+        }
+
+        .nav_buy {
+            width: 111px;
+            left: 299px;
+        }
+
+        .nav_delivery {
+            width: 95px;
+            left: 444px;  
+        }
+
+        .nav_support {
+            width: 85px;
+            left: 573px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <main class="mein">
+        <header class="header">
+            <!--
+                'header__logo' - 1 элемент блока header
+                'logo' - блок
+                'logo_img' -модификатор
+                'header__button' - 2 элемент блока header
+                'button' - блок
+                'button_cart' - модификатор
+            -->
+            <logo class="header__logo logo logo_img">
+                <img src="img/logo.svg" alt="logo">
+            </logo>
+            <button class="header__button button button_cart">
+                <img src="img/button-cart.svg" alt="cart">
+            </button>
+        </header>
+        <section class="section">
+
+        </section>
+        <footer class="footer">
+            <!--
+                'footer__nav' - элемент блока footer
+                'nav' - блок
+                'nav_capacity' - модификатор1
+                'nav_buy' - модификатор2
+                'nav_delivery' - модификатор3
+                'nav_support' - модификатор4
+            -->
+           
+                <nav class="footer__nav nav_capacity">
+                    <a href="#">Возможности</a></nav>
+                <nav class="footer__nav nav_buy">
+                    <a href="#">Где купить</a>
+                <nav class="footer__nav nav_delivery">
+                    <a href="#">Доставка</a>
+                <nav class="footer__nav nav_support">
+                    <a href="#">Помощь</a>
+           
+            
+
+        </footer>
+
+    </main>
+   
+</body>
+</html>
