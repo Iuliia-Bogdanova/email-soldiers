@@ -70,50 +70,42 @@
     </style>
 </head>
 <body>
-    <main class="mein">
-        <header class="header">
-            <!--
-                'header__logo' - 1 элемент блока header
-                'logo' - блок
-                'logo_img' -модификатор
-                'header__button' - 2 элемент блока header
-                'button' - блок
-                'button_cart' - модификатор
-            -->
-            <logo class="header__logo logo logo_img">
-                <img src="img/logo.svg" alt="logo">
-            </logo>
-            <button class="header__button button button_cart">
-                <img src="img/button-cart.svg" alt="cart">
-            </button>
-        </header>
-        <section class="section">
+    <div class="mein">
+        <div class="mein__body">
+            <div class="mein__header">
+                <div class="mein__logo logo logo_img">
+                    <img src="img/logo.svg" alt="logo">
+                </div>
+                <div class="mein__button button button_cart">
+                    <img src="img/button-cart.svg" alt="cart">
+                </div>
+            </div>
+            <div class="mein__section">
+                <div class="mein__column">
+                    <div class="item-main">
+                        <div class="item-mein__title">Виртуальная реальность без проводов</div>
+                        <div class="item-mein__text">Лучшее, что случалось с виртуальным миром в реальности. Новый компактный шлем без проводов и дорогих комьютеров.</div>
+                        <div class="Item-mein__button button button-buy">
+                        <img src="img/button-buy.svg" alt="buy"></div>
+                        <div class="item-mein__link"><a href="#">Возможности</a></div>
+                        <div class="item-mein__link"><a href="#">Где купить</a></div>
+                        <div class="item-mein__link"><a href="#">Доставка</a>
+                        </div>
+                        <div class="item-mein__link"><a href="#">Помощь</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mein__column">
+                    <div class="item-mein__picture picture picture_pic">
+                        <img src="img/pic.svg" alt="picture"></div>
+                    <div class="item-mein__picture picture picture_boy">
+                        <img src="img/guy.svg" alt="boy"></div>
+                    <div class="item-mein__picture picture picture_back">
+                        <img src="img/background.svg" alt="back"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        </section>
-        <footer class="footer">
-            <!--
-                'footer__nav' - элемент блока footer
-                'nav' - блок
-                'nav_capacity' - модификатор1
-                'nav_buy' - модификатор2
-                'nav_delivery' - модификатор3
-                'nav_support' - модификатор4
-            -->
-           
-                <nav class="footer__nav nav_capacity">
-                    <a href="#">Возможности</a></nav>
-                <nav class="footer__nav nav_buy">
-                    <a href="#">Где купить</a>
-                <nav class="footer__nav nav_delivery">
-                    <a href="#">Доставка</a>
-                <nav class="footer__nav nav_support">
-                    <a href="#">Помощь</a>
-           
-            
-
-        </footer>
-
-    </main>
-   
 </body>
 </html>
