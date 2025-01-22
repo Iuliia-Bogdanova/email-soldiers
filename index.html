@@ -1,313 +1,150 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Letter</title>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@700&display=swap');
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Normalize -->
-  <link rel="stylesheet" href="/styles/normalize.css">
-  <!-- CSS files -->
-  <link rel="stylesheet" href="/styles/style.css">
-  <link rel="stylesheet" href="/styles/cart_style.css">
-  <link rel="stylesheet" href="/styles/product_style.css">
-  <link rel="stylesheet" href="/styles/tips&tricks.css">
-  <title>Furniture Shop</title>
-</head>
+      /* можно задать глобальный шрифт для всего письма - тогда не нужно писать в table*/
+      /* body, table {
+        font-family: 'Montserrat', 'Roboto', Helvetica, Arial, sans-serif;
+      } */
 
-<body>
+      /* или через классы если будет использоваться с этим классом затем:
 
-  <!-- Header -->
-  <header>
-    <div class="wrapper__navbar">
-      <nav class="navbar">
-        <div class="container__navbar">
-          <a href="#" class="navbar__brand">Funiro.</a>
-          <div class="navbar__list-body">
-            <ul class="navbar__list">
-              <li>
-                <a href="#" class="navbar__products-link navbar__link">Products</a>
-                <img src="./images/icons/menu-arrow.svg" alt="" class="arrow__link" />
-                <ul class="navbar__products-sublist">
-                  <li>
-                    <a href="#el1" class="navbar__product-link link">Syltherine</a>
-                  </li>
-                  <li>
-                    <a href="#el2" class="navbar__product-link link">Lolito</a>
-                  </li>
-                  <li>
-                    <a href="#el3" class="navbar__product-link link">Respira</a>
-                  </li>
-                  <li>
-                    <a href="#el4" class="navbar__product-link link">Grifo</a>
-                  </li>
-                  <li>
-                    <a href="#el5" class="navbar__product-link link">Muggo</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="navbar__rooms-list navbar__link">Rooms</a>
-                <img src="./images/icons/menu-arrow.svg" alt="" class="arrow__link" />
-                <ul class="navbar__rooms-sublist">
-                  <li>
-                    <a href="#" class="navbar__room-link link">Room1</a>
-                  </li>
-                  <li>
-                    <a href="#" class="navbar__room-link link">Room2</a>
-                  </li>
-                  <li>
-                    <a href="#" class="navbar__room-link link">Room3</a>
-                  </li>
-                  <li>
-                    <a href="#" class="navbar__room-link link">Room4</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="navbar__inspirations navbar__link">Inspirations</a>
-              </li>
-            </ul>
-          </div>
-          <div class="navbar__search-field">
-            <input type="text" class="search-field" placeholder="Search for minimalist chair" />
-            <img src="./images/icons/search_icon.svg" alt="Search icon" class="search-icon" />
-          </div>
-          <div class="navbar__icons">
-            <a href="#" class="navbar__favorite-icon">
-              <img src="./images/icons/heart-b_icon.svg" alt="Selected products" class="navbar__favorite-items" />
-            </a>
-            <a href="#" class="navbar__cart-icon cart">
-              <img src="./images/icons/cart_icon.svg" alt="Cart" class="navbar__cart" />
-              <span class="cart__quantity">0</span>
-            </a>
-            <a href="#" class="navbar__user-avatar">
-              <img src="./images/icons/avatar.jpg" alt="Avatar" class="user-avatar" />
-            </a>
-          </div>
-          <div class="navbar__burgermenu">
-            <span></span>
-          </div>
-          <div class="cart-content">
-            <ul class="cart-content__list"></ul>
-            <div class="cart__fullPrice">
-              <span class="cart__fullPrice_text"></span>
-              <span class="cart__fullPrice_summ"></span>
-              <button class="cart__fullPrice_btn item-product__button btn_white">
-                Оформить заказ
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <!-- Header -->
+      .montserrat {
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+      }
+      .roboto {
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+      } */
 
-  <!-- Main -->
-  <main class="main">
-    <!-- Main Gallery -->
-    <div class="main__gallery-wrapper">
-      <div class="main__gallery-body">
-        <div class="main__ad">
-          <h1 class="main__ad-title">High-Quality
-            Furniture Just
-            For You</h1>
-          <p class="main__ad-description">Our furniture is made from selected and best quality materials that are
-            suitable for your dream home</p>
-          <button class="main__ad-btn">Shop Now</button>
-        </div>
-        <div class="main__gallery-dots">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-        <div class="main__gallery-arrows">
-          <div class="gallery__btn-prev">
-            <button class="arrow-prev">&#10094;</и>
-          </div>
-          <div class="gallery__btn-next">
-            <button class="arrow-next">&#10095;</button>
-          </div>
-        </div>
-        <div class="main__gallery-pics">
-          <div class="wrapper__gallery-pic">
-            <img src="/images/images_header/main-gallery1.jpg" alt="Sofa" class="main__gallery-pic">
-            <div class="about-pic about__first">
-              <a href="#" class="link__product">
-                <h3 class="pic-title">Bohauss</h3>
-                <p class="pic-description">Luxury big sofa 2-seat</p>
-                <div class="link-more">
-                  <p class="item-price">Rp 17.000.000</p>
-                  <a href="#" class="item-link"><img src="./images/icons/gallery_arrow.svg" alt="arrow"></a>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="wrapper__gallery-pic">
-            <img src="/images/images_header/main-gallery2.jpg" alt="Table" class="main__gallery-pic">
-            <div class="about-pic about__second">
-              <a href="#" class="link__product">
-                <h3 class="pic-title">Tutu</h3>
-                <p class="pic-description">Nice white table</p>
-                <div class="link-more">
-                  <p class="item-price">Rp 10.000.000</p>
-                  <a href="#" class="item-link"><img src="./images/icons/gallery_arrow.svg" alt="arrow"></a>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="wrapper__gallery-pic">
-            <img src="/images/images_header/main-gallery3.jpg" alt="Thing" class="main__gallery-pic">
-            <div class="about-pic about__third">
-              <h3 class="pic-title">Tamtam</h3>
-              <p class="pic-description">Regular nice big thing</p>
-              <div class="link-more">
-                <p class="item-price">Rp 24.000.000</p>
-                <a href="#" class="item-link"><img src="./images/icons/gallery_arrow.svg" alt="arrow"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Features-->
-    <div class="features__wrapper">
-      <div class="features bounce">
-        <img src="/images/icons/quality_icon.svg" alt="quality icon" class="feature__icon">
-        <div class="feature__body">
-          <h4 class="feature__title">High Quality</h4>
-          <p class="feature__text">Crafted from top materials</p>
-        </div>
-      </div>
-      <div class="features bounce">
-        <img src="/images/icons/verification_icon.svg" alt="verification icon" class="feature__icon">
-        <div class="feature__body">
-          <h4 class="feature__title">Warrany Protection</h4>
-          <p class="feature__text">Over 2 years</p>
-        </div>
-      </div>
-      <div class="features bounce">
-        <img src="/images/icons/shipping_icon.svg" alt="shipping icon" class="feature__icon">
-        <div class="feature__body">
-          <h4 class="feature__title">Free Shipping</h4>
-          <p class="feature__text">Order over 150 $</p>
-        </div>
-      </div>
-      <div class="features bounce">
-        <img src="/images/icons/support_icon.svg" alt="support icon" class="feature__icon">
-        <div class="feature__body">
-          <h4 class="feature__title">24 / 7 Support</h4>
-          <p class="feature__text">Dedicated support</p>
-        </div>
-      </div>
-    </div>
-    <!-- Products -->
-    <section class="products">
-      <div class="products__container">
-        <div class="products__title title">Our Products</div>
-        <div class="products__items"></div>
-        <div class="products__footer">
-          <button class="products__button btn_white">Show More</button>
-        </div>
-      </div>
-    </section>
-    <!-- Tips&Tricks -->
-    <div class="container__articles">
-      <h2 class="title__articles">Tips & Tricks</h2>
-      <div class="container__articles-body">
-        <div class="wrapper__articles">
-          <a class="card__artycles-body"
-            href="https://www.ikea.com/in/en/ideas/how-to-create-a-living-room-to-love-pubef3f6950">
-            <img src="/images/images_articles/article1.jpg" alt="article-picture" class="card__artycle-pic">
-            <h3 class="card__artycle-title">How to create a living
-              room to love</h3>
-            <p class="card__artycle-date">20 jan 2020</p>
-          </a>
-          <a class="card__artycles-body" href="https://www.clean-group.com.au/how-to-keep-your-business-space-clean/">
-            <img src="/images/images_articles/article2.jpg" alt="article-picture" class="card__artycle-pic">
-            <h3 class="card__artycle-title">Solution for clean look working
-              space</h3>
-            <p class="card__artycle-date">10 jan 2020</p>
-          </a>
-          <a class="card__artycles-body" href="https://www.mentalforlentils.com/make-cooking-enjoyable/">
-            <img src="/images/images_articles/article3.jpg" alt="article-picture" class="card__artycle-pic">
-            <h3 class="card__artycle-title">Make your cooking activity
-              more fun with good setup</h3>
-            <p class="card__artycle-date">20 jan 2020</p>
-          </a>
-        </div>
-        <!-- Next and previous buttons -->
-        <div class="card__btns">
-          <div class="btn-prev">
-            <button class="prev">&#10094;</и>
-          </div>
-          <div class="btn-next">
-            <button class="next">&#10095;</button>
-          </div>
-        </div>
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-      </div>
-    </div>
-  </main>
+      table {
+        border-spacing: 0;
+        mso-cellspacing: 0;
+        mso-padding-alt: 0;
+      }
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="funiro">
-      <h2 class="footer_title">Funiro.</h2>
-      <p class="footer_text">
-        Worldwide furniture store since <br />
-        2020. We sell over 1000+ branded <br />
-        products on our website
-      </p>
-      <p class="footer_text">
-        <img src="./images/icons/tag_icon_footer.svg" alt="tag" /> Sawojajar Malang, Indonesia
-      </p>
-      <p class="footer_text"><img src="./images/icons/phone_icon_footer.svg" alt="phone" /> +6289 456 3455</p>
-      <p><a class="footer_link" href="">www.funiro.com</a></p>
-    </div>
-    <div class="menu">
-      <h2 class="footer_title">Menu</h2>
-      <p><a class="footer_link" href="">Products</a></p>
-      <p><a class="footer_link" href="">Rooms</a></p>
-      <p><a class="footer_link" href="">Inspirations</a></p>
-      <p><a class="footer_link" href="">About Us</a></p>
-      <p><a class="footer_link" href="">Terms & Policy</a></p>
-    </div>
-    <div class="account">
-      <h2 class="footer_title">Account</h2>
-      <p><a class="footer_link" href="">My Account</a></p>
-      <p><a class="footer_link" href="">Checkout</a></p>
-      <p><a class="footer_link" href="">My Cart</a></p>
-      <p><a class="footer_link" href="">My catalog</a></p>
-    </div>
-    <div class="connected">
-      <h2 class="footer_title">Stay Connected</h2>
-      <p><a class="footer_link" href="">Facebook</a></p>
-      <p><a class="footer_link" href="">Instagram</a></p>
-      <p><a class="footer_link" href="">Twitter</a></p>
-    </div>
-    <div class="updated">
-      <h2 class="footer_title updated_title">Stay <span> Updated </span></h2>
-      <div class="subscribe">
-        <input type="email" class="email" placeholder="Enter your email"
-          pattern="^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i" />
-        <button class="email_button" onclick="checkAll()">
-          <img class="email_pic" src="./images/icons/button_icon_footer.svg" alt="button" />
-        </button>
+      td {
+        padding: 0;
+      }
+
+      #outlook a {
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        /* color: #e8fbfa;
+        font-size: 16px; */
+      }
+
+      /* @media screen and (max-width: 599.98px) {
+        .full-width {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .mobile-padding {
+          padding-left: 10px !important;
+          padding-right: 10px !important;
+        }
+
+        .mobile-col-padding {
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+        }
+      }
+
+      @media screen and (max-width: 399.98px) {
+        br {
+          display: none !important;
+        }
+
+        .two-columns .column {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .two-columns .column img {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .three-columns .column {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .three-columns .column img {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+				.four-columns .column {
+					width: 100% !important;
+					max-width: 100% !important;
+				}
+
+				.four-columns .column img {
+					width: 100% !important;
+					max-width: 100% !important;
+				}
+      } */
+
+    </style>
+    <!--[if (gte mso 9) | (IE)]>
+      <style type="text/css">
+        table {
+          border-collapse: collapse !important;
+        }
+      </style>
+    <![endif]-->
+
+    <!--[if (gte mso 9) | (IE)]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG />
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+  </head>
+  <body style="Margin: 0;padding: 0;min-width: 100%;background-color: #fff;">
+    <!--[if (gte mso 9) | (IE)]>
+      <style type="text/css">
+        body { background-color: #fff !important;}
+        body, table, td, p, a { font-family: sans-serif, Arial, Helvetica !important;}
+      </style>
+    <![endif]-->
+
+    <center style="width: 100%;table-layout: fixed;background-color: #fff;padding-top: 30px;padding-bottom: 0;">
+      <div style="max-width: 800px;background-color: #fff;box-shadow: 0 0 10px rgba(0,0,0,0.2);">
+        <!-- Прехедер -->
+        <div style="font-size: 0;line-height: 1px;mso-line-height-rule: exactly;display: none;max-width: 0;opacity: 0;overflow: hidden;mso-hide: all;">
+          Тестовое письмо
+        </div>
+        <!--[if (gte mso 9) | (IE)]>
+          <table width="800" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+          <tr>
+          <td>
+        <![endif]-->
+        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #fff;color: #18191f;Margin: 0;padding: 0;max-width: 800px;width: 100%; font-family: 'Montserrat', 'Roboto', Arial, Helvetica, sans-serif;">
+
+          <!-- Здесь секции письма -->
+
+        </table>
+        <!--[if (gte mso 9) | (IE)]>
+          </td>
+          </tr>
+          </table>
+        <![endif]-->
       </div>
-    </div>
-  </footer>
-
-  <script src="/js/js.js"></script>
-  <script src="/js/products.js"></script>
-  <script src="/js/tips&trick.js"></script>
-  <script src="/js/cart.js"></script>
-</body>
-
+    </center>
+  </body>
 </html>
